@@ -4,7 +4,7 @@ html {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -118,7 +118,7 @@ body {
 
 .header {
     color: #fff;
-    background-color: #323a45;
+    background-color: #333;
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: normal;
     min-height: 125px;
@@ -177,7 +177,7 @@ body {
     line-height: 1.42857143 !important;
     letter-spacing: 2px;
     border-radius: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0px 125px;
 }
 @media screen and (max-width: 768px) {
@@ -284,4 +284,61 @@ body {
 /** kalo pake afix harus dikasih nav-wrapper biar gak loncat **/
 .nav-wrapper {
     min-height: 50px;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
 }
