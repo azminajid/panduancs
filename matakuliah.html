@@ -74,20 +74,45 @@
                 
                 <h4>Kurikulum</h4>
                 <select class="form-control">
-                    <option>Kurikulum 2010</option>
                     <option>Kurikulum 2016</option>
+					<option>Kurikulum 2010</option>
                 </select>
                 
                 <h4>Mata Kuliah</h4>
                 <select class="form-control">
-                    <option>Desan Analisis dan Algoritma</option>
                     <option>Sistem Interaksi</option>
+					<option>Desan Analisis dan Algoritma</option>
                     <option>Grafika Komputer</option>
                 </select>
                 <div>
-                    <span class="pull-right" style="padding:20px 0 0 0"> <button type="button" class="btn btn-primary">Detail</button> </span>
-                       
+                    <span class="pull-right" style="padding:20px 0 0 0"> <button onclick="toggle_table()" type="button" class="btn btn-primary">Detail</button> </span>
                 </div>
+				<table id="tableku" class="table table-hover">
+					<thead>
+						<tr>
+							<th>Deskripsi</th>
+							<th>Keterangan</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Kode</td>
+							<td>IK032402</td>
+						</tr>
+						<tr>
+							<td>Nama</td>
+							<td>Desain & Analisis Algoritma</td>
+						</tr>
+						<tr>
+							<td>SKS</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>Kurikulum</td>
+							<td>2010</td>
+						</tr>
+					</tbody>
+				</table>
             </div>
         </div>
     </div>

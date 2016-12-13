@@ -16,3 +16,6 @@ $("#sidenav a").on('click', function(event) {
     window.location.hash = hash;
     });
 });
+var toggle_table = function(){
+	$('#tableku').css("display","table");
+};

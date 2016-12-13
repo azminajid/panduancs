@@ -48,9 +48,13 @@ body {
 .content h3 {
     color: #323a45; 
 }
+.content .table {
+    margin-top: 70px !important;
+	display: none;
+}
 @media screen and (max-width: 768px) {
     .content {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 }
 
