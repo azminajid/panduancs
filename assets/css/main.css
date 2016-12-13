@@ -220,7 +220,12 @@ body {
     margin-bottom: 4px;
 }
 /** navbar dropdown kalo yang active yang ada disitu (BIKINAN SENDIRI) **/
-.navbar-nav li a.dropdown-item:hover, .navbar-nav li.active a.dropdown-item {
+.navbar-nav li.active a.dropdown-item {
+    color: #fff !important;
+    background-color: #323a45 !important;
+}
+/** navbar dropdown kalo yang active yang ada disitu di hover bawahnya atau active (BIKINAN SENDIRI) **/
+.navbar-nav li a.dropdown-item:hover, .navbar-nav li.active li.active a.dropdown-item {
     color: #fff !important;
     background-color: #d09007 !important;
 }
