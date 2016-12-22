@@ -19,3 +19,11 @@ $("#sidenav a").on('click', function(event) {
 var toggle_table = function(){
 	$('#tableku').css("display","table");
 };
+var search = function(){
+	var string = $('#searchinput').val();
+	if(string.includes("kurikulum")){
+		location.href = "search.html";
+	} else {
+		location.href = "searchNotFound.html";
+	}
+}
