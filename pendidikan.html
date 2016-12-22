@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panduan.cs.ui.ac.id</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#sidenav" data-offset="20">
+    <!-- HEADER SEGMENT -->
+    <div class="header">
+        <img src="assets/img/fasilkom.png" width="75" height="75">
+        <h1>Himpunan Peraturan Akademik</h1>
+        <h2>Fakultas Ilmu Komputer</h2>
+    </div>
+    <!-- NAV SEGMENT -->
+    <div class="nav-wrapper"><!-- navbar affix supay gak loncat -->
+        <nav id="nav" class="navbar navbar-default fixed-top" data-spy="affix" data-offset-top="125">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tertib.html">Tata Tertib</a></li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Pendidikan<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="pendidikan.html">Program Pendidikan</a></li>
+								<li><a class="dropdown-item" href="">Perkuliahan</a></li>
+                                <li><a class="dropdown-item" href="">Biaya Pendidikan</a></li>
+                                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi</a></li>
+								<li><a class="dropdown-item" href="matakuliah.html">Mata Kuliah</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registrasi.html">Registrasi</a></li>
+                        <li><a href="glossary">Glossary</a></li>
+                        <li><a href="download.html">Download</a></li>
+                    </ul>
+                    <form class="form-inline" action="search.html">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <input type="name" class="form-control" placeholder="Search">
+                                <button type="submit"><a href="search.html">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENT SEGMENT -->
+    <div class="content container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8 col-xs-12">
+                <div id="sidenav" class="fluid-div" data-spy="affix" data-offset-top="125">
+                    <h4>Program Pendidikan</h4>
+                    <ul class="nav">
+                        <li>
+                            <a href="#sarjana">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Sarjana
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#sarjanatujuan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Tujuan
+									</a>
+								</li>
+								<li>
+									<a href="#sarjanakualifikasi">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Kualfikasi Lulusan
+									</a>
+								</li>
+								<li>
+									<a href="#sarjanabeban">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Beban dan Masa Studi
+									</a>
+								</li>
+							</ul>
+                        </li>
+						<li>
+                            <a href="#magister">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Magister
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#magistertujuan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Tujuan
+									</a>
+								</li>
+								<li>
+									<a href="#magisterarah">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Arah Pendidikan
+									</a>
+								</li>
+								<li>
+									<a href="#magisterpenyelenggaraan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Penyelenggaraan Pendidikan
+									</a>
+								</li>
+								<li>
+									<a href="#magisterkurikulum">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Kurikulum
+									</a>
+								</li>
+							</ul>
+                        </li>
+						<li>
+                            <a href="#doktor">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Doktor
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#doktortujuan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Tujuan
+									</a>
+								</li>
+								<li>
+									<a href="#doktorpelaksanaan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Pelaksanaan
+									</a>
+								</li>
+								<li>
+									<a href="#doktorkualifikasi">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Kualifikasi Lulusan
+									</a>
+								</li>
+								<li>
+									<a href="#doktorkurikulum">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Kurikulum
+									</a>
+								</li>
+							</ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-sm-pull-4 col-xs-12">
+                <h1>Program Pendidikan</h1>
+                <div class="section" id="sarjana">
+                    <h2>Sarjana</h2>
+					<div class="section" id="sarjanatujuan">
+						<h3>Tujuan</h3>
+						<p class="text-normal">Program Magister bertujuan untuk menyiapkan peserta didik untuk menjadi anggota masyarakat yang memiliki kemampuan akademik dalam menerapkan, mengembangkan, dan/atau memperkaya khasanah ilmu pengetahuan, teknologi dan/atau kesenian, serta menyebarluaskan dan mengupayakan penggunaannya untuk meningkatkan taraf kehidupan masyarakat dan memperkaya kebudayaan nasional.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="sarjanakualifikasi">
+						<h3>Klasifikasi Lulusan</h3>
+						<p class="text-normal">Program sarjana diarahkan pada lulusan yang memiliki kualifikasi sebagai berikut:</p>
+						<ol>
+							<li>menguasai dasar-dasar ilmiah dan keterampilan dalam bidang ilmu tertentu;</li>
+							<li>mampu menerapkan ilmu pengetahuan dan keterampilan yang dimilikinya sesuai dengan bidang ilmunya;</li>
+							<li>mampu mengikuti perkembangan ilmu pengetahuan, teknologi, budaya, dan seni.</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="sarjanabeban">
+						<h3>Beban dan Masa Studi</h3>
+						<p class="text-normal">Beban studi pada kurikulum program sarjana adalah 144-146 SKS termasuk skripsi/tugas akhir, dan dijadwalkan untuk 8 (delapan) semester. Dalam perolehan SKS peserta didik dapat mengambil lebih dari ketetapan. Dalam pelaksanaannya, dapat ditempuh dalam waktu kurang dari 8 (delapan) semester dan selama-lamanya 12 (dua belas) semester.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+                </div>
+				<div class="section" id="magister">
+                    <h2>Magister</h2>
+					<div class="section" id="magistertujuan">
+						<h3>Tujuan</h3>
+						<p class="text-normal">Beban studi pada kurikulum program sarjana adalah 144-146 SKS termasuk skripsi/tugas akhir, dan dijadwalkan untuk 8 (delapan) semester. Dalam perolehan SKS peserta didik dapat mengambil lebih dari ketetapan. Dalam pelaksanaannya, dapat ditempuh dalam waktu kurang dari 8 (delapan) semester dan selama-lamanya 12 (dua belas) semester.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="magisterarah">
+						<h3>Arah Pendidikan</h3>
+						<p class="text-normal">Program Magister diarahkan untuk menghasilkan lulusan dengan kompetensi sebagai berikut:</p>
+						<ol>
+							<li>mempunyai kemampuan mengembangkan dan memutakhirkan ilmu pengetahuan, teknologi, dan/ atau kesenian dengan cara menguasai dan memahami, pendekatan, metode, kaidah ilmiah disertai ketrampilan penerapannya;</li>
+							<li>mempunyai kemampuan memecahkan permasalahan di bidang keahliannya melalui kegiatan penelitian dan pengembangan berdasarkan kaidah ilmiah;</li>
+							<li>mempunyai kemampuan mengembangkan kinerja profesionalnya yang ditunjukkan dengan ketajaman analisis permasalahan, keserbacakupan tinjauan, kepaduan pemecahan masalah;</li>
+						<ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="magisterpenyelenggaraan">
+						<h3>Penyelenggaraan Pendidikan</h3>
+						<p class="text-normal">Program Magister diselenggarakan oleh Fakultas/Program Pascasarjana yang penyelenggaraannya harus memenuhi ketentuan yang berlaku di Universitas Indonesia. Program Magister diselenggarakan dengan menerapkan sistem kredit semester yang bobot belajarnya dinyatakan dalam Satuan Kredit Semester (SKS). Tahun akademik dibagi dalam 2 (dua) semester. Fakultas/Program Pascasarjana dapat menyelenggarakan semester pendek. Fakultas/Program Pascasarjana tidak dibenarkan melaksanakan cara pembelajaran kelas jauh. Program Magister dapat diselenggarakan dalam bentuk kelas khusus internasional yang diatur secara tersendiri dengan Keputusan Rektor. Program Magister dapat diikuti oleh mahasiswa secara penuh waktu atau paroh waktu. Program Magister dapat dilakukan pada pagi dan/atau sore hari. Program Magister dapat diselenggarakan dalam bentuk pembelajaran jarak jauh (distance learning).</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="magisterkurikulum">
+						<h3>Kurikulum</h3>
+						<p class="text-normal">Program Magister merupakan kegiatan akademik terjadwal yang terdiri dari pendidikan kemampuan dasar dan kekhususan, dan kegiatan mandiri. Pendidikan kemampuan dasar dan kekhususan terdiri dari perkuliahan, kerja laboratorium/lapangan, dan interaksi akademik. Interaksi akademik meliputi antara lain seminar dan diskusi ilmiah. Kegiatan mandiri di Program Magister berupa penelitian/pemecahan masalah yang dituangkan dalam bentuk tesis ataupun dalam bentuk karya tulis ilmiah lainnya.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+				</div>
+				<div class="section" id="doktor">
+                    <h2>Doktor</h2>
+					<div class="section" id="doktortujuan">
+						<h3>Tujuan</h3>
+						<p class="text-normal">Program Doktor bertujuan untuk menghasilkan lulusan yang berkualifikasi sebagai berikut:</p>
+						<ol>
+							<li>Memiliki integritas ilmiah;</li>
+							<li>Bersifat terbuka, tanggap terhadap perkembangan ilmu, teknologi, kesenian, serta permasalahan yang ada di masyarakat;</li>
+							<li>Memiliki wawasan dan kemampuan dasar keilmuan dan keterampilan teknis yang diperlukan untuk mengadaptasi dan/atau menciptakan metodologi baru yang akan dipergunakannya dalam melakukan telaah taat kaidah;</li>
+							<li>Menguasai pendekatan teori, konsep, paradigma yang paling sesuai dengan bidang keahliannya;</li>
+							<li>Mampu menggunakan pengetahuan dan keterampilan dalam kawasan keahliannya untuk menemukan jawaban dan/atau memecahkan masalah yang kompleks, termasuk yang memerlukan pendekatan lintas disiplin;</li>
+							<li>Mampu mengomunikasikan pemikiran serta hasil karyanya baik dengan kelompok pakar sebidang (peer group) maupun khalayak yang lebih luas;</li>
+							<li>Berkualitas internasional.</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="doktorpelaksanaan">
+						<h3>Pelaksanaan</h3>
+						<p class="text-normal">Program Doktor dilaksanakan berdasarkan izin penyelenggaraan sesuai dengan ketentuan yang berlaku di Universitas Indonesia. Program Doktor Universitas Indonesia diselenggarakan dengan memenuhi baku mutu menurut system penjaminan mutu Universitas Indonesia.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="doktorkualifikasi">
+						<h3>Kualfikasi Lulusan</h3>
+						<p class="text-normal">Program doktor diarahkan pada lulusan yang memiliki kualifikasi sebagai berikut:</p>
+						<ol>
+							<li>mampu mengembangkan konsep baru dalam ilmu pengetahuan, teknologi, budaya, dan seni;</li>
+							<li>mampu menghasilkan produk atau kajian inovatif dalam bidang ilmunya melalui kegiatan penelitian;</li>
+							<li>mampu melakukan sintesis atas berbagai perkembangan ilmunya.</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="doktorkurikulum">
+						<h3>Kurikulum</h3>
+						<ol>
+							<li>Program Doktor merupakan kegiatan akademik terjadwal yang terdiri dari pendidikan kemampuan dasar, kekhususan, dan penelitian;</li>
+							<li>Pendidikan kemampuan dasar dan kekhususan terdiri dari perkuliahan, penelusuran akademik, dan interaksi akademik;</li>
+							<li>Interaksi akademik merupakan kegiatan yang meliputi antara lain seminar, pertemuan profesi, dan diskusi ilmiah;</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SEGMENT -->
+    <footer class="footer">
+        <p class="text-small text-grey text-center">Copyrights Fakultas Ilmu Komputer Universitas Indonesia @2009</p>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

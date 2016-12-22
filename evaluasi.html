@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panduan.cs.ui.ac.id</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#sidenav" data-offset="20">
+    <!-- HEADER SEGMENT -->
+    <div class="header">
+        <img src="assets/img/fasilkom.png" width="75" height="75">
+        <h1>Himpunan Peraturan Akademik</h1>
+        <h2>Fakultas Ilmu Komputer</h2>
+    </div>
+    <!-- NAV SEGMENT -->
+    <div class="nav-wrapper"><!-- navbar affix supay gak loncat -->
+        <nav id="nav" class="navbar navbar-default fixed-top" data-spy="affix" data-offset-top="125">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tertib.html">Tata Tertib</a></li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Pendidikan<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="pendidikan.html">Program Pendidikan</a></li>
+								<li><a class="dropdown-item" href="">Perkuliahan</a></li>
+                                <li><a class="dropdown-item" href="">Biaya Pendidikan</a></li>
+                                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi</a></li>
+								<li><a class="dropdown-item" href="matakuliah.html">Mata Kuliah</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registrasi.html">Registrasi</a></li>
+                        <li><a href="glossary">Glossary</a></li>
+                        <li><a href="download.html">Download</a></li>
+                    </ul>
+                    <form class="form-inline" action="search.html">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <input type="name" class="form-control" placeholder="Search">
+                                <button type="submit"><a href="search.html">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENT SEGMENT -->
+    <div class="content container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8 col-xs-12">
+                <div id="sidenav" class="fluid-div" data-spy="affix" data-offset-top="125">
+                    <h4>Program Pendidikan</h4>
+                    <ul class="nav">
+                        <li>
+                            <a href="#belajar">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Evaluasi Hasil Belajar
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#belajarazas">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Azas
+									</a>
+								</li>
+								<li>
+									<a href="#belajartujuan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Tujuan
+									</a>
+								</li>
+								<li>
+									<a href="#belajaraspek">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Aspek yang diukur
+									</a>
+								</li>
+							</ul>
+                        </li>
+						<li>
+                            <a href="#putus">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Evaluasi Putus Studi
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#putuspengertian">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Pengertian
+									</a>
+								</li>
+								<li>
+									<a href="#putussarjana">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Program Sarjana
+									</a>
+								</li>
+								<li>
+									<a href="#putusmagister">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Program Magister
+									</a>
+								</li>
+								<li>
+									<a href="#putusdoktor">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Program Doktor
+									</a>
+								</li>
+							</ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-sm-pull-4 col-xs-12">
+                <h1>Evaluasi</h1>
+                <div class="section" id="belajar">
+                    <h2>Evaluasi Hasil Belajar</h2>
+					<div class="section" id="belajarazas">
+						<h3>Azas</h3>
+						<p class="text-normal">Evaluasi hasil belajar harus secara andal dan sahih mencerminkan pencapaian hasil belajar mahasiswa sesuai dengan tujuan pendidikan suatu program studi.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="belajartujuan">
+						<h3>Tujuan</h3>
+						<p class="text-normal">Evaluasi hasil belajar bertujuan mengukur dan menilai proses dan hasil belajar mahasiswa selama masa studinya di Universitas.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="belajaraspek">
+						<h3>Aspek yang diukur</h3>
+						<p class="text-normal">Aspek yang diukur dalam evaluasi hasil belajar adalah:</p>
+						<ol>
+							<li>Kemampuan akademik yang mencakup aspek kognitif, afektif dan psikomotorik, yang disesuaikan dengan jenis dan jenjang tujuan belajar yang akan dicapai untuk setiap mata kuliah; dan</li>
+							<li>Perilaku profesional, termasuk kejujuran akademik, kedisiplinan, kesantunan, kemampuan berinteraksi dan bekerja sama.</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+                </div>
+				<div class="section" id="putus">
+                    <h2>Evaluasi Putus Studi</h2>
+					<div class="section" id="putuspengertian">
+						<h3>Pengertian</h3>
+						<p class="text-normal">Mahasiswa dinyatakan putus studi apabila dalam keadaan sesuatu dan lain hal tidak dapat melanjutkan kegiatan akademik disebabkan oleh masalah administrasi dan/ atau evaluasi akademik. Pernyataan putus studi diputuskan oleh Rektor atas usul Pimpinan Fakultas/Program Pascasarjana. Mahasiswa yang tidak melaksanakan registrasi administrasi dan atau registrasi akademik 2 (dua) semester berturut-turut dinyatakan putus studi.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="putussarjana">
+						<h3>Program Sarjana</h3>
+						<p class="text-normal">Mahasiswa program sarjana dinyatakan putus studi:</p>
+						<ol>
+							<li>Apabila pada evaluasi 2 (dua) semester pertama tidak memperoleh indeks prestasi minimal 2,0 (dua koma nol) dari sekurang-kurangnya 24 (dua puluh empat) SKS terbaik;</li>
+							<li>Apabila pada evaluasi 4 (empat) semester pertama tidak memperoleh indeks prestasi minimal 2,0 (dua koma nol) dari sekurang-kurangnya 48 (empat puluh delapan) SKS terbaik;</li>
+							<li>Apabila pada evaluasi 8 (delapan) semester pertama tidak memperoleh indeks prestasi minimal 2,0 (dua koma nol) dari sekurang-kurangnya 96 (sembilan puluh enam) SKS terbaik;</li>
+							<li>Apabila pada evaluasi akhir masa studi tidak memperoleh indeks prestasi minimal 2,0 (dua koma nol) dari beban studi yang dipersyaratkan dengan nilai terendah C.</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="putusmagister">
+						<h3>Program Magister</h3>
+						<p class="text-normal">Mahasiswa penuh waktu yang mengikuti Program Magister Pagi dinyatakan putus studi:</p>
+						<ol>
+							<li>Apabila pada evaluasi 2 (dua) semester pertama tidak memperoleh indeks prestasi kumulatif minimal 2,75 (dua koma tujuh lima) dari jumlah 18 SKS terbaik</li>
+							<li>Apabila pada evaluasi akhir masa studi (6 semester) tidak memenuhi persyaratan indeks prestasi kumulatif dari beban studi yang dipersyaratkan minimal 2,75 (dua koma tujuh lima).</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+						<p class="text-normal">Mahasiswa penuh waktu yang mengikuti Program Magister Sore dinyatakan putus studi:</p>
+						<ol>
+							<li>Apabila pada evaluasi 2 (dua) semester pertama tidak memperoleh indeks prestasi kumulatif minimal 2,75 (dua koma tujuh lima) dari jumlah 14 SKS terbaik;</li>
+							<li>Apabila pada evaluasi akhir masa studi (7 semester) tidak memenuhi persyaratan indeks prestasi kumulatif dari beban studi yang dipersyaratkan minimal 2,75 (dua koma tujuh lima).</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+						<p class="text-normal">Mahasiswa paroh waktu dinyatakan putus studi:</p>
+						<ol>
+							<li>Apabila pada evaluasi 4 (empat) semester pertama tidak memperoleh indeks prestasi kumulatif minimal 2,75 (dua koma tujuh lima) dari 18 SKS terbaik;</li>
+							<li>Apabila pada evaluasi akhir masa studi (12 semester) tidak memenuhi persyaratan indeks prestasi kumulatif dari beban studi yang dipersyaratkan minimal 2,75 (dua koma tujuh lima).</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+					<div class="section" id="putusdoktor">
+						<h3>Program Doktor</h3>
+						<p class="text-normal">Mahasiswa program doktor lulusan program magister dinyatakan putus studi:</p>
+						<ol>
+							<li>Apabila pada evaluasi 2 (dua) semester pertama tidak memperoleh indeks prestasi minimal 2,75 (dua koma tujuh puluh lima) dari jumlah SKS minimal yang dipersyaratkan;</li>
+							<li>Apabila pada evaluasi 4 (empat) semester pertama tidak berhasil lulus ujian kualifikasi dan usulan penelitiannya tidak memperoleh persetujuan panitia penilai usulan penelitian untuk disertasi;</li>
+							<li>Apabila pada evaluasi 6 (enam) semester pertama tidak berhasil lulus ujian usulan penelitian dengan indeks prestasi minimal 2,75 (dua koma tujuh puluh lima) untuk semua mata kuliah yang dipersyaratkan;</li>
+							<li>Apabila pada evaluasi akhir masa studi (sepuluh semester) tidak memenuhi persyaratan untuk mengikuti ujian akhir pendidikan (ujian promosi doktor berupa penilaian terhadap disertasi) dengan indeks prestasi kumulatif dari beban studi yang dipersyaratkan minimal 2,75 (dua koma tujuh puluh lima).</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							[Ketetapan Wali Amanat Universitas Indonesia Nomor: 008/SK/MWA-UI/2004 tentang Perubahan Ketetapan MWA-UI Nomor: 005/SK/MWA-UI/2004 Tentang Tata Tertib Kehidupan Kampus Universitas Indonesia Pasal 9 dan 10]
+						</p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SEGMENT -->
+    <footer class="footer">
+        <p class="text-small text-grey text-center">Copyrights Fakultas Ilmu Komputer Universitas Indonesia @2009</p>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
