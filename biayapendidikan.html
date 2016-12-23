@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panduan.cs.ui.ac.id</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#sidenav" data-offset="20">
+    <!-- HEADER SEGMENT -->
+    <div class="header">
+        <img src="assets/img/fasilkom.png" width="75" height="75">
+        <h1>Himpunan Peraturan Akademik</h1>
+        <h2>Fakultas Ilmu Komputer</h2>
+    </div>
+    <!-- NAV SEGMENT -->
+    <div class="nav-wrapper"><!-- navbar affix supay gak loncat -->
+        <nav id="nav" class="navbar navbar-default fixed-top" data-spy="affix" data-offset-top="125">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tertib.html">Tata Tertib</a></li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Pendidikan<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pendidikan.html">Program Pendidikan</a></li>
+                                <li><a class="dropdown-item" href="">Perkuliahan</a></li>
+                                <li  class="active" ><a class="dropdown-item" href="biayapendidikan.html">Biaya Pendidikan</a></li>
+                                <li><a class="dropdown-item" href="beasiswa.html">Beasiswa</a></li>
+                                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi</a></li>
+                                <li><a class="dropdown-item" href="matakuliah.html">Mata Kuliah</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registrasi.html">Registrasi</a></li>
+                        <li><a href="glossary">Glossary</a></li>
+                        <li><a href="download.html">Download</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <input id="searchinput" type="name" class="form-control" placeholder="Search">
+                            <button onclick="search()" type="submit">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENT SEGMENT -->
+    <div class="content container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8 col-xs-12">
+                <div id="sidenav" class="fluid-div" data-spy="affix" data-offset-top="125">
+                    <h4>Biaya Pendidikan</h4>
+                    <ul class="nav">
+                        <li>
+                            <a href="#program">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Program Pendidikan
+                            </a>
+                            <ul class="side-sub">
+                                <li>
+                                    <a href="#reguler">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Program S1 Reguler
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#nonreguler">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Program S1 Non Reguler
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#magister">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Program Magister
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#doktor">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Program Doktor
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#putus">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Biaya Operasional Pendidikan
+                            </a>
+                            <ul class="side-sub">
+                                <li>
+                                    <a href="#putuspengertian">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Pembebanan Besaran BOP
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#putussarjana">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Panitia Biaya Operasional
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#putusmagister">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Syarat-Syarat Administrasi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#putusdoktor">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Sanksi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#mekanisme">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        Mekanisme Penetapan Biaya BOP
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#jangka">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                       Jangka Waktu Pembayaran
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-sm-pull-4 col-xs-12">
+                <h1>Biaya Pendidikan</h1>
+                <div class="section" id="program">
+                    <h2>Program Pendidikan</h2>
+                    <div class="section" id="reguler">
+                        <h3>Program Sajana Reguler</h3>
+                        <h3>Besaran Biaya Pembayaran</h3>
+                        <p>Besaran Biaya Pendidikan (BP) yang terdiri atas</p>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)</li>
+                            <li>Dana Kesejahteraan Fasilitas Mahasiswa (DKFM),</li>
+                            <li>Uang Pangkal (UP),</li>
+                            <li>Dana Pelengkap Pendidikan (DPP),</li>
+                            <li>Biaya Penyelarasan</li>
+                        </ol>
+                        <p>Besarnya Biaya Operasional Pendidikan (BOP) yang harus dibayarkan, disesuaikan dengan kemampuan keuangan penanggung Biaya Pendidikan (BP).</p>
+
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 2
+                        </p>
+
+                        <h3>Jadwal Pembayaran</h3>
+                        <ol>
+                            <li>Pembayaran Biaya Pendidikan (BP) dilakukan pada periode registrasi administrasi .</li>
+                            <li>Biaya Operasional Pendidikan (BOP) dan Dana Kesejahteraan Fasilitas Mahasiswa (DKFM) dibayar setiap awal semester pada tahun akademik bersangkutan.</li>
+                            <li>Uang Pangkal (UP) dan Dana Pelengkap Pendidikan (DPP) dibayarkan satu kali pada semester pertama pada tahun pertama sebelum menempuh pendidikan di Universitas.</li>
+                            <li>Biaya Penyelarasan dibayarkan satu kali pada awal semester penerimaan mahasiswa baru bagi yang diterima melalui program Prestasi dan Pemerataan Kesempatan Belajar (PPKB).</li>
+                        </ol>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 3
+                        </p>
+
+                        <h3>Cara Pembayaran</h3>
+                        <p>Pembayaran Biaya Pendidikan (BP) dilakukan dengan memanfaatkan teknologi payment switching melalui Automatic Teller Machine (ATM) atau kanal pembayaran lain, atau melalui setor tunai (teller) pada Bank yang telah bekerjasama dengan UI dengan memasukkan Nomor Pokok Mahasiswa (NPM).</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 4
+                        </p>
+
+                        <h3>Sanksi</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan di luar mekanisme yang ditetapkan oleh universitas, dianggap belum melaksanakan registrasi administrasi dan namanya tidak terdaftar pada semester berjalan. Fakultas dengan alasan apapun dilarang menerima pembayaran Biaya Pendidikan (BP) dari mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 5
+                        </p>
+
+                        <h3>Pengunduran Diri</h3>
+                        <p>Mahasiswa yang mengundurkan diri karena alasan tertentu wajib menyampaikan pernyataan pengunduran diri secara tertulis bermeterai cukup kepada Rektor melalui Direktorat Akademik.</p>
+                        <ol>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP).</li>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa penerima Beasiswa Universitas yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP) yang telah dibayarkan dan dibebankan biaya administrasi sebesar Rp 500.000.</li>
+                            <li>Sejak perkuliahan dimulai, Biaya Pendidikan (BP) tidak dapat dikembalikan bagi mahasiswa yang mengundurkan diri dengan alasan apapun</li>
+                        </ol>
+                        <p>Waktu permohonan/pengurusan pengembalian Biaya Pendidikan (BP) selambat-lambatnya dilakukan sebelum jadwal perkuliahan dimulai.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 10
+                        </p>
+
+                        <h3>Keterlambatan Pembayaran</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan (BP) di luar jadwal yang ditentukan dalam Kalender Akademik Universitas dibebankan biaya tambahan sebesar 50% (lima puluh persen) dari jumlah Biaya Pendidikan (BP) yang menjadi kewajibannya untuk semester berjalan.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 11
+                        </p>
+
+
+
+                    </div>
+                    <div class="section" id="nonreguler">
+                        <h2>Program Sajana Non Reguler</h2>
+                        <h3>Besaran Biaya Pembayaran</h3>
+                        <p>Besaran Biaya Pendidikan (BP) yang terdiri atas</p>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)</li>
+                            <li>Dana Kesejahteraan Fasilitas Mahasiswa (DKFM),</li>
+                            <li>Dana Pengembangan,</li>
+                            <li>Dana Pelengkap Pendidikan (DPP),</li>
+                            <li>Tuition Fee (TF),</li>
+                            <li>Admission Fee (AF)</li>
+                            <li>Biaya Penyelarasan</li>
+                            <li>Biaya Matrikulasi.</li>
+                        </ol>
+                        
+
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 629/SK/R/UI/2008 Tentang Biaya Pendidikan Mahasiswa Baru Universitas Indonesia Tahun Akademik 2008/2009 Pasal 2
+                        </p>
+
+                        <h3>Jadwal Pembayaran</h3>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)/Tuition Fee (TF) dan Dana Kesejahteraan Fasilitas Mahasiswa (DKFM), dibayar setiap awal semester pada tahun akademik bersangkutan;</li>
+                            <li>Uang Pangkal (UP) Admission Fee (AF) Dana Pengembangan (DP), dan Dana Pelengkap Pendidikan (DPP) dibayarkan satu kali pada semester pertama sebelum menempuh pendidikan di Universitas;</li>
+                            <li>Dana Penyelarasan dibayarkan satu kali pada awal semester penerimaan mahasiswa baru sebelum menempuh pendidikan di Universitas.</li>
+                            
+                        </ol>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 3
+                        </p>
+
+                        <h3>Cara Pembayaran</h3>
+                        <p>Pembayaran Biaya Pendidikan (BP) dilakukan dengan memanfaatkan teknologi payment switching melalui Automatic Teller Machine (ATM) atau kanal pembayaran lain, atau melalui setor tunai (teller) pada Bank yang telah bekerjasama dengan UI dengan memasukkan Nomor Pokok Mahasiswa (NPM).<br><br>
+                        Bagi mahasiswa kelas international dan warga negara asing (WNA) atau yang diwajibkan membayardengan mata uang Asing, pembayaran biaya pendidikan hanya dapat dilakukan dengan cara penyetoran tunai (teller) bank atau transfer ke rekening giro Universitas yang telah ditentukan dengan dilengkapi identitas mahasiswa yaitu Nomor Pokok Mahasiswa (NPM) dan Nama Mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 4
+                        </p>
+
+                        <h3>Sanksi</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan di luar mekanisme yang ditetapkan oleh universitas, dianggap belum melaksanakan registrasi administrasi dan namanya tidak terdaftar pada semester berjalan. Fakultas dengan alasan apapun dilarang menerima pembayaran Biaya Pendidikan (BP) dari mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 5
+                        </p>
+
+                        <h3>Pengunduran Diri</h3>
+                        <p>Mahasiswa yang mengundurkan diri karena alasan tertentu wajib menyampaikan pernyataan pengunduran diri secara tertulis bermeterai cukup kepada Rektor melalui Direktorat Akademik.</p>
+                        <ol>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP).</li>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa penerima Beasiswa Universitas yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP) yang telah dibayarkan dan dibebankan biaya administrasi sebesar Rp 500.000.</li>
+                            <li>Sejak perkuliahan dimulai, Biaya Pendidikan (BP) tidak dapat dikembalikan bagi mahasiswa yang mengundurkan diri dengan alasan apapun</li>
+                        </ol>
+                        <p>Waktu permohonan/pengurusan pengembalian Biaya Pendidikan (BP) selambat-lambatnya dilakukan sebelum jadwal perkuliahan dimulai.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 10
+                        </p>
+
+                        <h3>Keterlambatan Pembayaran</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan (BP) di luar jadwal yang ditentukan dalam Kalender Akademik Universitas dibebankan biaya tambahan sebesar 50% (lima puluh persen) dari jumlah Biaya Pendidikan (BP) yang menjadi kewajibannya untuk semester berjalan.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 11
+                        </p>
+
+
+
+                    </div>
+                    <div class="section" id="magister">
+                        <h2>Program Magister</h2>
+                        <h3>Besaran Biaya Pembayaran</h3>
+                        <p>Besaran Biaya Pendidikan (BP) yang terdiri atas</p>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)</li>
+                            <li>Dana Kesejahteraan Fasilitas Mahasiswa (DKFM),</li>
+                            <li>Dana Pengembangan,</li>
+                            <li>Dana Pelengkap Pendidikan (DPP),</li>
+                            <li>Tuition Fee (TF),</li>
+                            <li>Admission Fee (AF)</li>
+                            <li>Biaya Penyelarasan</li>
+                            <li>Biaya Matrikulasi.</li>
+                        </ol>
+                        
+
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 629/SK/R/UI/2008 Tentang Biaya Pendidikan Mahasiswa Baru Universitas Indonesia Tahun Akademik 2008/2009 Pasal 2
+                        </p>
+
+                        <h3>Jadwal Pembayaran</h3>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)/Tuition Fee (TF) dan Dana Kesejahteraan Fasilitas Mahasiswa (DKFM), dibayar setiap awal semester pada tahun akademik bersangkutan;</li>
+                            <li>Uang Pangkal (UP) Admission Fee (AF) Dana Pengembangan (DP), dan Dana Pelengkap Pendidikan (DPP) dibayarkan satu kali pada semester pertama sebelum menempuh pendidikan di Universitas;</li>
+                            <li>Dana Penyelarasan dibayarkan satu kali pada awal semester penerimaan mahasiswa baru sebelum menempuh pendidikan di Universitas.</li>
+                            
+                        </ol>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 3
+                        </p>
+
+                        <h3>Cara Pembayaran</h3>
+                        <p>Pembayaran Biaya Pendidikan (BP) dilakukan dengan memanfaatkan teknologi payment switching melalui Automatic Teller Machine (ATM) atau kanal pembayaran lain, atau melalui setor tunai (teller) pada Bank yang telah bekerjasama dengan UI dengan memasukkan Nomor Pokok Mahasiswa (NPM).<br><br>
+                        Bagi mahasiswa kelas international dan warga negara asing (WNA) atau yang diwajibkan membayardengan mata uang Asing, pembayaran biaya pendidikan hanya dapat dilakukan dengan cara penyetoran tunai (teller) bank atau transfer ke rekening giro Universitas yang telah ditentukan dengan dilengkapi identitas mahasiswa yaitu Nomor Pokok Mahasiswa (NPM) dan Nama Mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 4
+                        </p>
+
+                        <h3>Sanksi</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan di luar mekanisme yang ditetapkan oleh universitas, dianggap belum melaksanakan registrasi administrasi dan namanya tidak terdaftar pada semester berjalan. Fakultas dengan alasan apapun dilarang menerima pembayaran Biaya Pendidikan (BP) dari mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 5
+                        </p>
+
+                        <h3>Pengunduran Diri</h3>
+                        <p>Mahasiswa yang mengundurkan diri karena alasan tertentu wajib menyampaikan pernyataan pengunduran diri secara tertulis bermeterai cukup kepada Rektor melalui Direktorat Akademik.</p>
+                        <ol>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP).</li>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa penerima Beasiswa Universitas yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP) yang telah dibayarkan dan dibebankan biaya administrasi sebesar Rp 500.000.</li>
+                            <li>Sejak perkuliahan dimulai, Biaya Pendidikan (BP) tidak dapat dikembalikan bagi mahasiswa yang mengundurkan diri dengan alasan apapun</li>
+                        </ol>
+                        <p>Waktu permohonan/pengurusan pengembalian Biaya Pendidikan (BP) selambat-lambatnya dilakukan sebelum jadwal perkuliahan dimulai.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 10
+                        </p>
+
+                        <h3>Keterlambatan Pembayaran</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan (BP) di luar jadwal yang ditentukan dalam Kalender Akademik Universitas dibebankan biaya tambahan sebesar 50% (lima puluh persen) dari jumlah Biaya Pendidikan (BP) yang menjadi kewajibannya untuk semester berjalan.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 11
+                        </p>
+
+
+
+                    </div>
+                    <div class="section" id="doktor">
+                        <h2>Program Doktor</h2>
+                        <h3>Besaran Biaya Pembayaran</h3>
+                        <p>Besaran Biaya Pendidikan (BP) yang terdiri atas</p>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)</li>
+                            <li>Dana Kesejahteraan Fasilitas Mahasiswa (DKFM),</li>
+                            <li>Dana Pengembangan,</li>
+                            <li>Dana Pelengkap Pendidikan (DPP),</li>
+                            <li>Tuition Fee (TF),</li>
+                            <li>Admission Fee (AF)</li>
+                            <li>Biaya Penyelarasan</li>
+                            <li>Biaya Matrikulasi.</li>
+                        </ol>
+                        
+
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 629/SK/R/UI/2008 Tentang Biaya Pendidikan Mahasiswa Baru Universitas Indonesia Tahun Akademik 2008/2009 Pasal 2
+                        </p>
+
+                        <h3>Jadwal Pembayaran</h3>
+                        <ol>
+                            <li>Biaya Operasional Pendidikan (BOP)/Tuition Fee (TF) dan Dana Kesejahteraan Fasilitas Mahasiswa (DKFM), dibayar setiap awal semester pada tahun akademik bersangkutan;</li>
+                            <li>Uang Pangkal (UP) Admission Fee (AF) Dana Pengembangan (DP), dan Dana Pelengkap Pendidikan (DPP) dibayarkan satu kali pada semester pertama sebelum menempuh pendidikan di Universitas;</li>
+                            <li>Dana Penyelarasan dibayarkan satu kali pada awal semester penerimaan mahasiswa baru sebelum menempuh pendidikan di Universitas.</li>
+                            
+                        </ol>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 3
+                        </p>
+
+                        <h3>Cara Pembayaran</h3>
+                        <p>Pembayaran Biaya Pendidikan (BP) dilakukan dengan memanfaatkan teknologi payment switching melalui Automatic Teller Machine (ATM) atau kanal pembayaran lain, atau melalui setor tunai (teller) pada Bank yang telah bekerjasama dengan UI dengan memasukkan Nomor Pokok Mahasiswa (NPM).<br><br>
+                        Bagi mahasiswa kelas international dan warga negara asing (WNA) atau yang diwajibkan membayardengan mata uang Asing, pembayaran biaya pendidikan hanya dapat dilakukan dengan cara penyetoran tunai (teller) bank atau transfer ke rekening giro Universitas yang telah ditentukan dengan dilengkapi identitas mahasiswa yaitu Nomor Pokok Mahasiswa (NPM) dan Nama Mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 4
+                        </p>
+
+                        <h3>Sanksi</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan di luar mekanisme yang ditetapkan oleh universitas, dianggap belum melaksanakan registrasi administrasi dan namanya tidak terdaftar pada semester berjalan. Fakultas dengan alasan apapun dilarang menerima pembayaran Biaya Pendidikan (BP) dari mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 5
+                        </p>
+
+                        <h3>Pengunduran Diri</h3>
+                        <p>Mahasiswa yang mengundurkan diri karena alasan tertentu wajib menyampaikan pernyataan pengunduran diri secara tertulis bermeterai cukup kepada Rektor melalui Direktorat Akademik.</p>
+                        <ol>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP).</li>
+                            <li>Biaya pendidikan (BP) yang telah dibayarkan oleh mahasiswa penerima Beasiswa Universitas yang mengundurkan diri sebelum kuliah dimulai dapat dikembalikan 80% dari jumlah kewajiban Biaya Pendidikan (BP) yang telah dibayarkan dan dibebankan biaya administrasi sebesar Rp 500.000.</li>
+                            <li>Sejak perkuliahan dimulai, Biaya Pendidikan (BP) tidak dapat dikembalikan bagi mahasiswa yang mengundurkan diri dengan alasan apapun</li>
+                        </ol>
+                        <p>Waktu permohonan/pengurusan pengembalian Biaya Pendidikan (BP) selambat-lambatnya dilakukan sebelum jadwal perkuliahan dimulai.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 10
+                        </p>
+
+                        <h3>Keterlambatan Pembayaran</h3>
+                        <p>Mahasiswa yang membayar Biaya Pendidikan (BP) di luar jadwal yang ditentukan dalam Kalender Akademik Universitas dibebankan biaya tambahan sebesar 50% (lima puluh persen) dari jumlah Biaya Pendidikan (BP) yang menjadi kewajibannya untuk semester berjalan.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432A/SK/R/UI/2008 Tentang Biaya Pendidikan Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 11
+                        </p>
+
+
+
+                </div>
+                    
+                <div class="section" id="putus">
+                    <h2>Biaya Operasional Pendidikan</h2>
+                    <div class="section" id="putuspengertian">
+                        <h3>Pembebanan Besaran BOP</h3>
+                        <p class="text-normal">Pembebanan besaran Biaya Operasional Pendidikan (BOP) yang ditanggung oleh penanggung biaya per semester :</p>
+                        <ol>
+                        <li>berkisar antara Rp 100.000,- (seratus ribu rupiah) hingga Rp 5.000.000,- (lima juta rupiah) untuk rumpun ilmu sosial dan humaniora, dan</li>
+                        <li>berkisar antara Rp 100.000,- (seratus ribu rupiah) hingga Rp 7.500.000,- (tujuh juta lima ratus ribu rupiah) untuk rumpun kesehatan dan rumpun sains dan teknologi</li>
+                        </ol>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                           Keputusan Rektor Universitas Indonesia Nomor 432B/SK/R/UI/2008 tentang Mekanisme Penetapan Pembebanan Besaran Biaya Operasional Pendidikan Bagi Mahasiswa Universitas Indonesia Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 2
+                        </p>
+                    </div>
+                    <div class="section" id="putussarjana">
+                        <h3>Panitia Biaya Operasional</h3>
+                        <p class="text-normal">Panitia Biaya Operasional Pendidikan (BOP) terdiri atas:</p>
+                        <ol>
+                            <li>Unsur bidang kemahasiswaan fakultas yang ditugaskan oleh Dekan</li>
+                            <li>Unsur bidang keuangan fakultas yang ditugaskan oleh Dekan; dan</li>
+                            <li>Unsur mahasiswa dari Badan Eksekutif Mahasiswa Fakultas (BEM-F)/Senat Mahasiswa Fakultas (SM-F) yang dikoordinir oleh Badan Eksekutif Mahasiswa Universitas (BEM-UI).</li>
+                            
+                        </ol>
+                        <p class="text-normal">Panitia Biaya Operasional Pendidikan (BOP) bertugas mengumpulkan, memasukkan, mengolah data Mahasiswa, melakukan wawancara, dan membuat rekomendasi kepada Dekan tentang besaran Biaya Operasional Pendidikan (BOP) yang akan dibebankan kepada penanggung biaya mahasiswa.</p>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432B/SK/R/UI/2008 tentang Mekanisme Penetapan Pembebanan Besaran Biaya Operasional Pendidikan Bagi Mahasiswa Universitas Indonesia Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 3
+                        </p>
+                    </div>
+                    <div class="section" id="putusmagister">
+                        <h3>Syarat – syarat Administrasi</h3>
+                        <p class="text-normal">Mahasiswa wajib menyerahkan data yang diperlukan kepada Panitia Biaya Operasional Pendidikan (BOP) untuk digunakan sebagai dasar dalam menentukan besaran Biaya Operasional Pendidikan (BOP) yang dibebankan kepada penanggung Biaya Pendidikan (BP).
+                        <br>
+                        Data tersebut adalah :</p>
+                        <ol>
+                            <li>Surat Keterangan Penghasilan Total/Slip Gaji penanggung Biaya Pendidikan (BP) bagi yang bekerja di sektor formal (instansi pemerintah atau swasta). Ketentuan Slip Gaji ini tidak berlaku bagi orang tua yang bekerja di sektor informal/usaha sendiri yang tidak memiliki Slip Gaji, akan tetapi wajib menyertakan surat keterangan dari RT/RW domisili penanggung biaya dan orang tua.</li>
+                            <li>Penghasilan yang dimaksud adalah pendapatan total dari orang tua dan penanggung biaya;Nomor Pokok Wajib Pajak dan/atau keterangan Surat Pemberitahuan Tahunan-Pajak Penghasilan tahun terakhir;</li>
+                            <li>Fotokopi rekening listrik (tempat tinggal orang tua dan Penanggung biaya) 3 (tiga) bulan terakhir;</li>
+                            <li>Fotokopi rekening telpon (tempat tinggal orang tua dan Penanggung biaya) 3 (tiga) bulan terakhir;</li>
+                            <li>Fotokopi rekening air (tempat tinggal orang tua dan Penanggung biaya) 3 (tiga) bulan terakhir;</li>
+                            <li>Fotokopi Surat Pemberitahuan Pajak Bumi dan Bangunan tempat tinggal orang tua dan Penanggung biaya;</li>
+                            <li>Fotokopi Kartu Keluarga dan fotokopi KTP orang tua/wali yang masih berlaku;</li>
+                            <li>Formulir data diri yang telah diisi oleh Mahasiswa.</li>
+
+                        </ol>
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432B/SK/R/UI/2008 tentang Mekanisme Penetapan Pembebanan Besaran Biaya Operasional Pendidikan Bagi Mahasiswa Universitas Indonesia Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 4
+                        </p>
+                    </div>
+                    <div class="section" id="putusdoktor">
+                        <h3>Sanksi</h3>
+                        <p class="text-normal">Mahasiswa yang terbukti melakukan kecurangan dalam penyerahan data dikenakan sanksi berupa pembebanan besaran pembiayaan sebesar dua kali lipat dari besaran pembiayaan Biaya Operasional Pendidikan (BOP)</p>
+                        
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432B/SK/R/UI/2008 tentang Mekanisme Penetapan Pembebanan Besaran Biaya Operasional Pendidikan Bagi Mahasiswa Universitas Indonesia Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 5
+                        </p>
+                    </div>
+                    <div class="section" id="mekanisme">
+                        <h3>Mekanisme Penetapan BOP</h3>
+                        
+                        <ol>
+                            <li>Panitia Biaya Operasional Pendidikan (BOP) wajib memasukkan dan mengolah data Mahasiswa yang telah dikumpulkan.</li>
+                            <li>Pengolahan data mengikuti sistem & prosedur pembebanan besaran Biaya Operasional Pendidikan (BOP)</li>
+                            <li>Panitia Biaya Operasional Pendidikan (BOP) membuat rekomendasi tertulis mengenai pembebanan besaran Biaya Operasional Pendidikan (BOP) berdasarkan data Mahasiswa yang telah diolah.</li>
+                            <li>Pembebanan besaran Biaya Operasional Pendidikan (BOP) ditetapkan oleh Dekan dengan memperhatikan rekomendasi yang dibuat oleh Panitia Biaya Operasional Pendidikan (BOP).</li>
+                            <li>Besaran Biaya Operasional Pendidikan (BOP) yang telah ditetapkan oleh Dekan bersifat final.</li>
+                        </ol>
+
+                        <p class="text-normal">Dalam keadaan khusus, penanggung biaya yang mengalami kesulitan keuangan dalam melunasi Biaya Operasional Pendidikan (BOP) yang telah ditetapkan, dapat mengajukan permohonan tertulis kepada Dekan untuk mendapatkan fasilitas mengangsur. Keadaan khusus tersebut harus dapat dibuktikan dengan dokumen pendukung yang wajib dilampirkan dalam surat permohonan.Jangka waktu pelunasan angsuran adalah 1 (satu) semester.Rektor menjamin setiap Mahasiswa tidak akan diberhentikan karena ketidakmampuannya untuk membayar Biaya Operasional Pendidikan (BOP).</p>
+
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432B/SK/R/UI/2008 tentang Mekanisme Penetapan Pembebanan Besaran Biaya Operasional Pendidikan Bagi Mahasiswa Universitas Indonesia Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 6, 7, dan 8
+                        </p>
+                    </div>
+                    <div class="section" id="jangka">
+                        <h3>Jangka Waktu Pembayaran</h3>
+                        <p class="text-normal">Ketetapan mengenai pembebanan Biaya Operasional Pendidikan (BOP) yang harus dibayarkan oleh penanggung biaya berlaku selama jangka waktu 2 (dua) semester sejak ketetapan pembebanan Biaya Operasional Pendidikan (BOP) diputuskan.</p>
+                        
+                        <p class="text-small text-right text-grey">
+                            Sumber :<br>
+                            Keputusan Rektor Universitas Indonesia Nomor 432B/SK/R/UI/2008 tentang Mekanisme Penetapan Pembebanan Besaran Biaya Operasional Pendidikan Bagi Mahasiswa Universitas Indonesia Program Sarjana Reguler Tahun Akademik 2008/2009 Pasal 9
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SEGMENT -->
+    <footer class="footer">
+        <p class="text-small text-grey text-center">Copyrights Fakultas Ilmu Komputer Universitas Indonesia @2009</p>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
