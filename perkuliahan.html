@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panduan.cs.ui.ac.id</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#sidenav" data-offset="20">
+    <!-- HEADER SEGMENT -->
+    <div class="header">
+        <img src="assets/img/fasilkom.png" width="75" height="75">
+        <h1>Himpunan Peraturan Akademik</h1>
+        <h2>Fakultas Ilmu Komputer</h2>
+    </div>
+    <!-- NAV SEGMENT -->
+    <div class="nav-wrapper"><!-- navbar affix supay gak loncat -->
+        <nav id="nav" class="navbar navbar-default fixed-top" data-spy="affix" data-offset-top="125">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tertib.html">Tata Tertib</a></li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Pendidikan<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="pendidikan.html">Program Pendidikan</a></li>
+								<li><a class="dropdown-item" href="">Perkuliahan</a></li>
+                                <li><a class="dropdown-item" href="biayapendidikan.html">Biaya Pendidikan</a></li>
+                                 <li><a class="dropdown-item" href="beasiswa.html">Beasiswa</a></li>
+                                <li><a class="dropdown-item" href="evaluasi.html">Evaluasi</a></li>
+								<li><a class="dropdown-item" href="matakuliah.html">Mata Kuliah</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registrasi.html">Registrasi</a></li>
+                        <li><a href="glossary">Glossary</a></li>
+                        <li><a href="download.html">Download</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+						<li>
+                            <input id="searchinput" type="name" class="form-control" placeholder="Search">
+                            <button onclick="search()" type="submit">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENT SEGMENT -->
+    <div class="content container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8 col-xs-12">
+                <div id="sidenav" class="fluid-div" data-spy="affix" data-offset-top="125">
+                    <h4>Perkuliahan</h4>
+                    <ul class="nav">
+                        <li>
+                            <a href="#lintasFakultas">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Lintas Fakultas
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#lintasFakultasPersyaratan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Persyaratan
+									</a>
+								</li>
+								<li>
+									<a href="#lintasFakultasPelaksanaan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Pelaksanaan
+									</a>
+								</li>
+							</ul>
+                        </li>
+						<li>
+                            <a href="#SemPen">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Semester Pendek
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#SemPenKetentuan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Ketentuan Umum
+									</a>
+								</li>
+								<li>
+									<a href="#SemPenPelaksanaan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Pelaksanaan
+									</a>
+								</li>
+							</ul>
+                        </li>
+						<li>
+                            <a href="#matrikulasi">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                Matrikulasi
+                            </a>
+							<ul class="side-sub">
+								<li>
+									<a href="#matrikulasiPengertian">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Pengertian
+									</a>
+								</li>
+								<li>
+									<a href="#matrikulasiTujuan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Tujuan
+									</a>
+								</li>
+								<li>
+									<a href="#matrikulasiPelaksanaan">
+										<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+										Pelaksanaan
+									</a>
+								</li>
+							</ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-sm-pull-4 col-xs-12">
+                <h1>Perkuliahan</h1>
+                <div class="section" id="lintasFakultas">
+                    <h2>Lintas Fakultas</h2>
+					<div class="section" id="lintasFakultasPersyaratan">
+						<h3>Persyaratan</h3>
+						<p class="text-normal">Persyaratan bagi mahasiswa untuk mengikuti matakuliah lintas fakultas adalah:</p>
+             <ol>
+             <li> Terdaftar sebagai mahasiswa untuk semester yang akan berjalan,
+             <li> Memperoleh persetujuan dari Penasehat Akademik,
+             <li> Melakukan proses pendaftaran untuk mengikuti perkuliaha11 lintas fakultas.
+            </ol>						
+            <p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 285/SK/R/UI/2003 tentang Pedoman Penyelenggaraan Perkuliahan Lintas Fakultas di Lingkungan Universitas Indonesia Pasal 2</p>
+					</div>
+					<div class="section" id="lintasFakultasPelaksanaan">
+						<h3>Pelaksanaan</h3>
+						<p class="text-normal">Tata cara pelaksanaan adalah sebagai berikut : </p>
+						<ol>
+							<li>Fakultas penyelenggara sebulan sebelum jadwal registrasi akademik di fakultas menyampaikan ke Direktorat Pendidikan Universitas Indonesia daftar matakuliah lintas fakultas secara lengkap yang terdiri dari jadwal, ruang kuliah, dosen pengelola, kode matakuliah, jumlah sks dan daya tampung yang dapat diikuti oleh mahasiswa fakultas lain.</li>
+							<li>Direktorat Pendidikan Universitas Indonesia membuat daftar mata kuliah lintas fakultas untuk disampaikan ke seluruh fakultas di lingkungan Universitas Indonesia;</li>
+							<li>Mahasiwa melakukan pendaftaran di fakultasnya dengan mengisi formulir khusus untuk matakuliah lintas fakultas,</li>
+              <li>Sub Bagian Akademik Fakultas secara kolektif menyampaikan formulir khusus seperti tersebut pada ayat (3) ke Direktorat Pendidikan.</li>
+              <li>Direktorat .Pendidikan memproses data tersebut dan menerbitkan daftar peserta matakuliah lintas fakultas ke Sub Bagian Akademik fakultas penyelenggarn dan fakultas peserta</li>
+              <li>Sub Bagian Akademik fakultas peserta mengumumkan daftar peserta matakuliah lintas fakultas</li>
+              <li>Mahasiswa meneliti keikutsertaannya untuk matakuliah lintas fakultas pada Isian Rencana Studi (IRS)nya</li>
+              <li>Proses pendaftaran matakuliah lintas fakultas harus sudah selesai sebelum jadwal registrasi akademik di fakultas dilaksanakan.</li>
+						</ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 285/SK/R/UI/2003 tentang Pedoman Penyelenggaraan Perkuliahan Lintas Fakultas di Lingkungan Universitas Indonesia Pasal 3</p>
+					</div>
+                </div>
+				<div class="section" id="SemPen">
+                    <h2>Semester Pendek</h2>
+					<div class="section" id="SemPenKetentuan">
+						<h3>Ketentuan Umum</h3>
+						<p class="text-normal">Semester pendek adalah satuan waktu kegiatan yang terdiri atas 8–10 minggu kuliah ekivalen dengan 12–14 kali tatap muka atau kegiatan terjadwal lainnya, berikut kegiatan iringannya, termasuk 1—2 minggu kegiatan penilaian. Kegiatan akademik yang dilaksanakan pada semester pendek sama dengan kegiatan akademik yang dilaksanakan pada semester gasal dan semester genap. Penyelenggaraan semester pendek tidak merupakan kewajiban setiap fakultas/program studi.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 005/SK/R/UI/2008 tentang Penyelenggaran Perkuliahan Pada Semester Pendek di Universitas Indonesia
+Pasal 1</p>
+					</div>
+					<div class="section" id="SemPenPelaksanaan">
+						<h3>Pelaksanaan</h3>
+						<p class="text-normal">Semester Pendek dilaksanakan dengan ketentuan sebagai berikut:</p>
+						<ol>
+							<li>Mata kuliah yang diselenggarakan pada semester pendek terbatas pada mata kuliah yang ditawarkan oleh masing-masing fakultas/program studi.</li>
+							<li>Jumlah peserta yang dipersyaratkan untuk diselenggarakannya mata kuliah ditentukan berdasarkan pertimbangan efisiensi pelaksanaan.</li>
+						<ol>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 005/SK/R/UI/2008 tentang Penyelenggaran Perkuliahan Pada Semester Pendek di Universitas Indonesia
+Pasal 5</p>
+					</div>
+					
+				</div>
+				<div class="section" id="matrikulasi">
+                    <h2>Matrikulasi</h2>
+					<div class="section" id="matrikulasiPengertian">
+						<h3>Pengertian</h3>
+						<p class="text-normal">kegiatan pembelajaran tambahan untuk menyetarakan pengetahuan peserta didik agar dapat mengikuti program pendidikan yang akan diikuti.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 008/SK/R/UI/2008 tentang Penyelenggaran Perkuliahan Matrikulasi Untuk Program Magister dan Doktor di Universitas Indonesia Pasal 1</p>
+					</div>
+					<div class="section" id="matrikulasiTujuan">
+						<h3>Tujuan</h3>
+						<p class="text-normal">Tujuan penyelenggaraan matrikulasi di Universitas Indonesia adalah memberikan kesempatan kepada calon mahasiswa untuk menyetarakan pengetahuannya setelah diterima pada program studi yang dipilih.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 008/SK/R/UI/2008 tentang Penyelenggaran Perkuliahan Matrikulasi Untuk Program Magister dan Doktor di Universitas Indonesia Pasal 2</p>
+					</div>
+					<div class="section" id="matrikulasiPelaksanaan">
+						<h3>Pelaksanaan</h3>
+						<p class="text-normal">Mata kuliah yang diselenggarakan untuk matrikulasi terbatas pada mata kuliah yang disyaratkan oleh masing-masing fakultas/program studi. Jumlah peserta untuk diselenggarakannya mata kuliah ditentukan oleh masing-masing fakultas/program studi.</p>
+						<p class="text-small text-right text-grey">
+							Sumber :<br>
+							Keputusan Rektor Universitas Indonesia Nomor: 008/SK/R/UI/2008 tentang Penyelenggaran Perkuliahan Matrikulasi Untuk Program Magister dan Doktor di Universitas Indonesia Pasal 4</p>
+					</div>
+
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SEGMENT -->
+    <footer class="footer">
+        <p class="text-small text-grey text-center">Copyrights Fakultas Ilmu Komputer Universitas Indonesia @2009</p>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
