@@ -21,7 +21,7 @@ var toggle_table = function(){
 };
 var search = function(){
 	var string = $('#searchinput').val();
-	if(string.includes("ketetapan wali amanat")){
+	if(string.includes("ketetapan") || string.includes("wali") || string.includes("amanat")){
 		location.href = "search.html";
 	} else {
 		location.href = "searchNotFound.html";
